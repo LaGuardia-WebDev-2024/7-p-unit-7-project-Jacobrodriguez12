@@ -4,20 +4,32 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
+var chesseSize = 50;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
   background(255,255,255,0);
+  stroke(0,0,0)
+  //Rat head
+  fill(0,0,0)
+  ellipse(70,330,40,40);
+  //rat body 
+  ellipse(50,346,60,15);
+  //rat left leg
+  ellipse(40,358,10,40);
+  //rat right leg
+  ellipse(70,358,10,40);
+  //eyes
   
+  
+  
+  //chesse 
+  textSize(chesseSize);
+  text("🧀", 250, 350);
 
+  chesseSize = chesseSize + 3;
 
-
-
-
-  //Show x y values when mousepressed
-  if(mousePressed){showXYPositions();}
 
 }
 
